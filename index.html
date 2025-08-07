@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. To Do list</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" href="product.png" type="image/png">
+  </head>
+  <body class="bg-blue-800 ">
+    <div class="bg-gray-100 border-2 border-b-blue-950 rounded-2xl my-36 mx-auto w-96 flex flex-col items-center justify-center">
+        <div class="flex justify-center items-center my-10"><span><img src="product.png" class="size-14" alt="todolst"/></span><span class="ml-3 text-xl font-bold text-gray-800" >To do list</span></div>
+       <div><input  id="inputbox" type="text" placeholder="task to do " class="bg-white text-black border border-b-blue-100 rounded-2xl w-80  mb-4">
+            <input onclick="addtask()"  type="submit" value="ADD" class="text-black bg-gray-200 border rounded-xl px-2 py-1 hover:bg-gray-300 transition">
+              </div>
+              <ul id="taskwrite" class="flex  flex-col"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
